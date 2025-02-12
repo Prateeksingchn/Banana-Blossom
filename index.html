@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 
@@ -16,12 +17,12 @@
     <div class="cursor"></div>
     <div id="nav">
         <div id="nav-left">
-            <img src="https://bananablossomsalads.com/wp-content/uploads/2023/04/bb_logo.svg" alt="">
+            <img src="https://bananablossomsalads.com/wp-content/uploads/2023/04/bb_logo.svg" alt="Logo">
         </div>
         <div id="nav-right">
-            <h3>Our Menu</h3>
-            <h3>Order Now</h3>
-            <h3>Franchise</h3>
+            <h3><a href="#menu">Our Menu</a></h3>
+            <h3><a href="#order">Order Now</a></h3>
+            <h3><a href="#franchise">Franchise</a></h3>
             <i class="ri-menu-4-line"></i>
         </div>
     </div>
@@ -54,7 +55,7 @@
         <div id="page2">
             <!-- <video autoplay loop muted src="video1.mp4"></video> -->
             <div id="page2-info">
-                <h2>Hi! We’re Banana Blossom</h2>
+                <h2>Hi! We're Banana Blossom</h2>
                 <h3>The fresh face of fast food</h3>
                 <h3>Asian salads, rice bowls and rice paper rolls made fresh.</h3>
                 <div id="about-us">
@@ -221,34 +222,45 @@
         </div>
 
 
-        <div id="footer">
+        <footer id="footer">
             <div id="top-footer">
                 <div id="ft-left">
                     <h1>Goodness. Greatness.</h1>
                     <div id="foot-mail">
-                        <input id="mail" type="text" placeholder="abc@gmail.com">
-                        <div id="subs">Subscribe</div>
+                      <div id="mail-input">
+                        <input type="email" id="mail" placeholder="Enter your email" required>
+                      </div>
+                      <button id="subs">Subscribe</button>
                     </div>
+                  </div>
+              <div id="ft-right">
+                <div id="ftr-links">
+                  <div class="ftr-col">
+                    <h2>About</h2>
+                    <a href="#">About Us</a>
+                    <a href="#">Catering</a>
+                    <a href="#">Order Now</a>
+                    <a href="#">Franchising</a>
+                  </div>
+                  <div class="ftr-col">
+                    <h2>Company</h2>
+                    <a href="#">Careers</a>
+                    <a href="#">News</a>
+                  </div>
+                  <div class="ftr-col">
+                    <h2>Resources</h2>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Tasty Rewards T&Cs</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms &amp; Conditions</a>
+                  </div>
                 </div>
-                <div id="ft-right">
-                    <div id="ftr-p1">
-                        <h2>About us</h2>
-                        <h2>Catering</h2>
-                        <h2>Order Now</h2>
-                        <h2>Franchising</h2>
-                        <h2>Careers</h2>
-                        <h2>News</h2>
-                    </div>
-                    <div id="ftr-p2">
-                        <h4>Contact us</h4>
-                        <h4>Tasty Rewards T&Cs</h4>
-                        <h4>Privacy Policy</h4>
-                        <h4>Terms & Conditions</h4>
-                    </div>
-                </div>
+              </div>
             </div>
-            <div id="bottom-footer"></div>
-        </div>
+            <div id="bottom-footer">
+              &copy; Company Name. All rights reserved.
+            </div>
+          </footer>
     </div>
 
     

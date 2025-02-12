@@ -289,58 +289,44 @@ gsap.from("#page9 #page9-part1 h1",{
 }
 })
 
-// PAGE9
-gsap.to("#page10-hero",{
-  width:"95%",
-  // y:120,
-  duration:0.7,
-  delay:1,
-  opacity:1,
-  // stagger: 0.6,
-  scrollTrigger:{
-    trigger:"#page10-hero",
-    scroller:"#main",
-    // markers:true,
-    start:"top 85%",
-    end:"top 55%",
-    scrub:2,
-    // pin:true
-}
+
+// PAGE10 Animation
+gsap.timeline({
+  scrollTrigger: {
+    trigger: "#page10-hero",
+    scroller: "#main",
+    start: "top 85%",
+    end: "top 55%",
+    scrub: 2,
+  },
 })
+  // Animate the #page10-hero section
+  .to("#page10-hero", {
+    width: "95%",
+    duration: 0.7,
+    delay: 1,
+    opacity: 1,
+  })
+  // Animate the #p10-img1 image
+  .from("#pg10-img #p10-img1", {
+    scale: 0.9,
+    duration: 1,
+    delay: 1,
+    opacity: 0,
+    stagger: 0.6,
+  }, "<") // Use "<" to overlap with the previous animation
+  // Animate the h1 text in #pg10-text
+  .from("#pg10-text h1", {
+    y: 130,
+    duration: 1,
+    delay: 1,
+    opacity: 0,
+    stagger: 0.6,
+  }, "<"); // Use "<" to overlap with the previous animation
 
-gsap.from("#pg10-img #p10-img1",{
-  scale:0.9,
-  duration:1,
-  delay:1,
-  opacity:0,
-  stagger: 0.6,
-  scrollTrigger:{
-    trigger:"#pg10-img #p10-img1",
-    scroller:"#main",
-    // markers:true,
-    start:"top 95%",
-    end:"top 85%",
-    scrub:2,
-    // pin:true
-}
-})
-gsap.from("#pg10-text h1",{
-  y:150,
-  duration:1,
-  delay:1,
-  opacity:0,
-  stagger: 0.6,
-  scrollTrigger:{
-    trigger:"#pg10-text h1",
-    scroller:"#main",
-    // markers:true,
-    start:"top 95%",
-    end:"top 85%",
-    scrub:2,
-    // pin:true
-}
-})
-
-
-
-
+// Improvements:
+// 1. Used a gsap.timeline() to group all animations together and control their timing
+// 2. Configured the ScrollTrigger for the entire timeline instead of individually
+// 3. Added comments to explain each animation step
+// 4. Removed unnecessary comments and cleaned up formatting
+// 5. Used "<" to overlap the animations for a smoother transition
