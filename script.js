@@ -329,4 +329,8 @@ gsap.timeline({
 // 2. Configured the ScrollTrigger for the entire timeline instead of individually
 // 3. Added comments to explain each animation step
 // 4. Removed unnecessary comments and cleaned up formatting
+<<<<<<< HEAD
 // 5. Used "<" to overlap the animations for a smoother transition
+=======
+// 5. Used "<" to overlap the animations for a smoother transition
+>>>>>>> 7caeabf87abddfb7dd4525505cefef332ecd2f5c
